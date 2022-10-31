@@ -11,7 +11,7 @@ pipeline{
 		stage('Conf Env') {
 
 			steps {
-				sh 'systemctl start docker'
+				sh 'sudo dockerd'
 			}
 		}
 
