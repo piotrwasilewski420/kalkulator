@@ -8,6 +8,12 @@ pipeline{
 
 	stages {
 
+		stage('Conf Env') {
+
+			steps {
+				sh 'systemctl start docker'
+			}
+		}
 
 		stage('Build') {
 
