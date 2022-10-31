@@ -11,7 +11,7 @@ pipeline{
 		stage('Conf Env') {
 
 			steps {
-				sh 'sudo dockerd'
+				sh 'dockerd'
 			}
 		}
 
