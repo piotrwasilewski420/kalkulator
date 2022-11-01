@@ -8,12 +8,6 @@ pipeline{
 
 	stages {
 
-		stage('Build') {
-
-			steps {
-				app = docker.build("getintodevops/hellonode")
-			}
-		}
 
 		stage('Login') {
 
