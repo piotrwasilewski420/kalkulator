@@ -16,6 +16,13 @@ pipeline{
 			}
 		}
 
+		stage('Build') {
+
+			steps {
+				sh 'docker uild -t piotrwasilewski420/kalkulator .'
+			}
+		}
+
 		stage('Push') {
 
 			steps {
