@@ -8,17 +8,10 @@ pipeline{
 
 	stages {
 
-		stage('Conf Env') {
-
-			steps {
-				sh 'dockerd'
-			}
-		}
-
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t piotrwasilewski420/kalkulator:latest .'
+				app = docker.build("getintodevops/hellonode")
 			}
 		}
 
