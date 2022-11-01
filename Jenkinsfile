@@ -19,7 +19,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker uild -t piotrwasilewski420/kalkulator .'
+				sh 'docker build -t piotrwasilewski420/kalkulator .'
 			}
 		}
 
